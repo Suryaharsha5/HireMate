@@ -1,0 +1,97 @@
+post https://hire-mate-mcte.vercel.app/user-api/user-1
+Content-Type: application/json
+
+{
+    "username":"Thrinath",
+    "password":"Eww",
+    "proficiency":"Logo Designer",
+    "description":"",
+    "pendingRequests":[],
+    "acceptedRequests":[]
+}
+
+###
+
+post https://hire-mate-mcte.vercel.app/user-api/user-2
+Content-Type: application/json
+
+{
+    "username":"Siddu",
+    "password":"Eww",
+    "responses":[]
+}
+
+###
+get https://hire-mate-mcte.vercel.app/user-api/users
+
+###
+post  https://hire-mate-mcte.vercel.app/user-api/login-1
+Content-Type: application/json
+
+{
+    "username":"Thrinath",
+    "password":"Eww"
+}
+
+###
+post  https://hire-mate-mcte.vercel.app/user-api/login-2
+Content-Type: application/json
+
+{
+    "username":"Siddu",
+    "password":"Eww"
+}
+
+###
+post https://hire-mate-mcte.vercel.app/user-api/edit
+Content-Type: application/json
+
+{
+    "username":"sadwika123",
+    "description":"pke"
+}
+
+###
+delete https://hire-mate-mcte.vercel.app/user-api/friendAccepted/sadwika123/thrinath123
+
+
+###
+delete https://hire-mate-mcte.vercel.app/user-api/friendRequested/sadwika123/thrinath123
+
+###
+post https://hire-mate-mcte.vercel.app/user-api/messagePost
+Content-Type: application/json
+
+{
+    "participants": ["ramana123", "surya123"],
+     "messages": [
+        {
+          "message": "Hi sir",
+          "timestamp": "2025-01-13T12:00:00Z",
+          "whoseMessage": "surya123"
+        }
+      ]
+}
+
+###
+get https://hire-mate-mcte.vercel.app/user-api/getmessage/ramana123/surya123
+
+###
+post https://hire-mate-mcte.vercel.app/user-api/jobdonelist
+Content-Type: application/json
+
+{
+    "payload":["123","352"]
+}
+
+###
+get https://hire-mate-mcte.vercel.app/user-api/getjobList
+
+###
+post https://hire-mate-mcte.vercel.app/user-api/createWalletAndRating
+
+###
+get https://hire-mate-mcte.vercel.app/user-api/getAllRatings
+
+###
+put https://hire-mate-mcte.vercel.app/user-api/addFieldsToUsers
